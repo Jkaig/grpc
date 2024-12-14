@@ -143,7 +143,7 @@ you will be able to browse and build the code.
 > @rem Run from grpc directory after cloning the repo with --recursive or updating submodules.
 > md .build
 > cd .build
-> cmake .. -G "Visual Studio 17 2022"
+> cmake .. "Visual Studio 17 2022"
 > cmake --build . --config Release
 ```
 
@@ -159,7 +159,7 @@ installed to be able to compile the C/C++ sources.
 > md build
 > cd build
 > call "%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" x64
-> cmake ..\.. -GNinja -DCMAKE_BUILD_TYPE=Release
+> cmake ..\..Ninja -DCMAKE_BUILD_TYPE=Release
 > cmake --build .
 ```
 

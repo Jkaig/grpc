@@ -36,7 +36,7 @@ set VS_ARCHITECTURE="Win32"
 @rem Use non-standard build directory to avoid too long filenames
 mkdir example_build
 cd example_build
-cmake -G %VS_GENERATOR% -A %VS_ARCHITECTURE% -DOPENSSL_ROOT_DIR=%OPENSSL_DIR% ../examples/cpp/helloworld/cmake_externalproject || goto :error
+cmake %VS_GENERATOR% -A %VS_ARCHITECTURE% -DOPENSSL_ROOT_DIR=%OPENSSL_DIR% ../examples/cpp/helloworld/cmake_externalproject || goto :error
 cmake --build . --config Release || goto :error
 cd ..
 
