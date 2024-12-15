@@ -21,7 +21,7 @@
 Pod::Spec.new do |s|
   s.name     = 'gRPC'
   version = '1.70.0-dev'
-  s.version  = version
+  s.version  = '1.62.0'
   s.summary  = 'gRPC client library for iOS/OSX'
   s.homepage = 'https://grpc.io'
   s.license  = 'Apache License, Version 2.0'
